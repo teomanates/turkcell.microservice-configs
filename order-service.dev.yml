@@ -1,2 +1,6 @@
-#
+#docker
 spring:
+  datasource:
+    url: "jdbc:postgresql://pg-1:5435/order-service"
+    username: postgres
+    password: test
