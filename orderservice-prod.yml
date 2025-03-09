@@ -1,7 +1,7 @@
 #kubernetes, prod
 spring:
   datasource:
-    url: "jdbc:postgresql://pg-service:5435/order-service"
+    url: "jdbc:postgresql://postgres_5435-service:5432/order-service"
     username: postgres
     password: test
 
@@ -32,7 +32,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: "http://eureka-service:8888/eureka/"
+      defaultZone: "http://discovery-service:8888/eureka/"
     register-with-eureka: true
     fetch-registry: true
   instance:

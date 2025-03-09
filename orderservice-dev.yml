@@ -1,7 +1,7 @@
 #docker
 spring:
   datasource:
-    url: "jdbc:postgresql://pg-1:5435/order-service"
+    url: "jdbc:postgresql://postgres_5435:5432/order-service"
     username: postgres
     password: test
 
@@ -32,7 +32,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: "http://eureka:8888/eureka/"
+      defaultZone: "http://discovery-service:8888/eureka/"
     register-with-eureka: true
     fetch-registry: true
   instance:
