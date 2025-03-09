@@ -1,0 +1,5 @@
+#local
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5435/order-service"
+   
