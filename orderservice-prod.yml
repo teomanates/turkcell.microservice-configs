@@ -26,9 +26,6 @@ spring:
         binder:
           brokers: kafka-service:9092
 
-server:
-  port: 8081
-
 eureka:
   client:
     service-url:
