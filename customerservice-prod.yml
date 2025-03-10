@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://mysql_3308-service:3306/customer-service?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Europe/Istanbul"
+    username: root
+    password: test
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://discovery-server-service:8888/eureka/"
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true

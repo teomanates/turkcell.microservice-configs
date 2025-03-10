@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: "mongodb://admin:test@localhost:27019/product-service?authSource=admin"
+  cloud:
+    discovery:
+      enabled: true
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/

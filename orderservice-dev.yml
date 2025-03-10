@@ -1,4 +1,4 @@
-#docker
+# Docker environment
 spring:
   datasource:
     url: "jdbc:postgresql://postgres_5435:5432/order-service"
